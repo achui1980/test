@@ -1,0 +1,18 @@
+<form action="" method="POST" role="form">
+    <legend>单词录入</legend>
+
+    <div class="form-group">
+        <label for="">单词</label>
+        <input type="text" class="form-control" id="word" placeholder="请输入单词">
+    </div>
+    <div class="form-group">
+        <label for="">释义</label>
+        <input type="text" class="form-control" id="explain" placeholder="请输入释义">
+    </div>
+    <div class="form-group">
+        <label for="">导入</label>
+        <textarea cols="15" rows="10" class="form-control" id="import" placeholder="example：单词，回车符隔开"></textarea>
+    </div>
+
+    <button {{action "submitWord"}} class="btn btn-primary">提交</button>
+</form>

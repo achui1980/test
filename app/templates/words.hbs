@@ -1,0 +1,14 @@
+{{outlet}}
+<h4><span class="label label-info">剩余{{remaining}}条记录</span></h4>
+<div class="btn-group">
+  <button type="button" {{action "revert"}} class="btn btn-default">revert</button>
+  <button type="button" class="btn btn-default">
+     {{#link-to "words.index" activeClass="selected"}}All{{/link-to}}
+  </button>
+  <button type="button" class="btn btn-default">
+    {{#link-to "words.passed" activeClass="selected"}}Passed{{/link-to}}
+  </button>
+  <button type="button" class="btn btn-default">
+    {{#link-to "words.remain" activeClass="selected"}}Remain{{/link-to}}
+  </button>
+</div>

@@ -1,0 +1,29 @@
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>单词2</th>
+			<th>Passed</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each itemController="word"}}
+		  <tr>
+		  	<td>
+				{{#if isEditing}}
+		  	  		{{input type="text" value=word focus-out="acceptChanges" insert-newline="acceptChanges"}}
+		  	  	{{else}}
+		  	  		<label {{action "editWord" on="doubleClick"}}>{{word}}</label>
+		  		{{/if}}
+		  	</td>
+		  	<td>{{isPassed}}</td>
+			<td>
+			    <button type="button" {{action "removeWord"}}class="btn btn-default btn-sm">
+			        <span class="glyphicon glyphicon-remove"></span>
+			    </button>
+			</td>
+
+		  </tr>
+		{{/each}}
+	</tbody>
+</table>

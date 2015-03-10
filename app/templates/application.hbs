@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">Achui</a>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2">
+			{{render 'sidebar'}}
+		</div>
+		<div class="col-lg-10">
+			{{outlet}}
+		</div>
+	</div>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+	<a class="navbar-brand" href="#"><p class="text-center">Copy</p></a>
+</nav>
